@@ -1,0 +1,16 @@
+{
+  "name": "dex-scripts",
+  "version": "1.0.0",
+  "description": "Deployment and utility scripts for DEX challenge",
+  "main": "deploy.js",
+  "scripts": {
+    "deploy": "node deploy.js",
+    "deploy:sepolia": "node deploy.js --network sepolia"
+  },
+  "dependencies": {
+    "starknet": "^5.19.5",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": ["starknet", "deployment", "dex"],
+  "license": "MIT"
+}

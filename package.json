@@ -1,0 +1,23 @@
+{
+  "name": "dex-challenge",
+  "version": "1.0.0",
+  "description": "A decentralized exchange (DEX) for ERC20 BALLOONS ($BAL) ↔ STRK",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "chain": "starknet-devnet --port 5050",
+    "deploy": "cd scripts && node deploy.js",
+    "deploy:sepolia": "cd scripts && node deploy.js --network sepolia"
+  },
+  "keywords": ["dex", "starknet", "cairo", "defi", "amm"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
