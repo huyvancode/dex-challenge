@@ -54,7 +54,8 @@ Before starting, ensure you have:
 
 1. **Clone and setup the project:**
 ```bash
-cd "c:\\Users\\huyoi\\Blockchain\\dex-challenge"
+git clone <your-repo-url>
+cd dex-challenge
 npm run install:all
 ```
 
